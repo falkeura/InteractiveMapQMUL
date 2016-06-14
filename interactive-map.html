@@ -1,0 +1,247 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Interactive map
+  </title>
+  <style>
+p
+{
+  font-family:arial;
+position:absolute;
+width:350px;
+left:750px;
+margin-left:70px;
+top:0px;
+z-index:2;
+}
+.s{
+  font-family: arial;
+  font-size: 8px;
+  position:absolute;
+width:350px;
+left:750px;
+margin-left:70px;
+bottom: 10px;
+}
+.center{
+  padding-left: 150px;
+}
+</style>
+</head>
+<body>
+  <div class="center"> 
+
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <rect id="svg_4" height="77" width="434.00002" y="0.03321" x="208.84816" stroke-width="0" stroke="#000000" fill="#e3eac5"/>
+  <rect id="svg_3" height="387.99998" width="643.00001" y="42.03326" x="-2.15002" stroke-width="0" stroke="#000000" fill="#e3eac5"/>
+  <rect id="svg_1" height="53" width="654.00004" y="418.0334" x="-9.15009" stroke-width="0" stroke="#000000" fill="#bfbfbf"/>
+  <rect id="svg_2" height="428" width="45" y="-1.9667" x="277.84962" stroke-width="0" stroke="#000000" fill="#bfbfbf"/>
+  <rect id="svg_5" height="3" width="0" y="39.03333" x="320.85001" stroke-width="0" stroke="#000000" fill="#e3eac5"/>
+  <rect id="svg_11" height="8" width="1" y="349.73334" x="488.26666" stroke-width="0" stroke="#000000" fill="#7f007f"/>
+  <g id="engineering">
+   <polygon points="173,275 262,275 262,385 340,385 340,201 445,201 445,340 500,340 500,374 445,374 445,397 173,397" stroke-width="0" stroke="#000000" fill="#7f007f" onclick="showIMG('engineering_img')"/>
+  </g>
+  <rect id="mathematics" height="81" width="82" y="314.73322" x="24.26691" stroke-width="0" stroke="#000000" fill="#7f007f" onclick="showIMG('math_img')" />
+  <set attributeName="x" from="24.26691" to="25" 
+         begin="mouseover" end="mouseout"/>
+
+  <rect id="itl" height="110" width="65" y="181.73324" x="34.26677" stroke-width="0" stroke="#000000" fill="#7f007f" onclick="showIMG('itl_img')" />
+  <g id="cs">
+   <polygon points="30,72 126,72 126,126 98,126 98,160 30,160" stroke-width="0" stroke="#000000" fill="#7f007f" onclick="showIMG('cs_img')"/>
+  </g>
+   <set attributeName="stroke-width" to="5" 
+         begin="mouseover" end="mouseout"/>
+  <rect id="qmotion" height="54" width="60" y="71.73334" x="125.26722" stroke-width="0" stroke="#000000" fill="#ff7f00" onclick="showIMG('qmotion_img')"/>
+  <rect id="drapers" height="95" width="73" y="71.73344" x="172.26685" stroke-width="0" stroke="#000000" fill="#ff7f00" onclick="showIMG('drapers_img')"/>
+  <rect id="bancroft rooms" height="95" width="43" y="71.73343" x="221.26652" stroke-width="0" stroke="#000000" fill="#ff7f00" onclick="showIMG('bancroft_img')"/>
+  <rect id="infusion" height="95" width="54" y="160.73311" x="208.26666" stroke-width="0" stroke="#000000" fill="#ff7f00" onclick="showIMG('infusion_img')"/>
+  <rect id="irc" height="48" width="106" y="153.7321" x="339.26667" stroke-width="0" stroke="#000000" fill="#7f007f"  onclick="showIMG('irc_img')"/>
+  <rect id="svg_24" height="0" width="5" y="40.73334" x="370.26666" stroke-width="0" stroke="#000000" fill="#7f007f"/>
+  <rect transform="rotate(160, 515.266, 30.2344)" id="temporary" height="53" width="94" y="3.73334" x="468.26666" stroke-width="0" stroke="#000000" fill="#7f007f" onclick="showIMG('temporary_img')"/>
+  <g id="fogg">
+  <polygon points="342,72 342,7 385,7 385,80 435,80 435,120 350,120 340,111 340,100 264,100 264,72" stroke-width="0" stroke="#000000" fill="#7f007f" onclick="showIMG('fogg_img')" />
+  </g>
+  <rect id="svg_30" height="0" width="1" y="250.73334" x="615.26666" stroke-width="0" stroke="#000000" fill="#7f007f"/>
+  <rect id="chamber orchestra" height="36" width="48" y="196.73334" x="498.26666" stroke-width="0" stroke="#FFCC66" fill="#ff7f00" onclick="showIMG('orchestra_img')"/>
+  <rect id="post" height="43" width="93" y="154.73331" x="498.26669" stroke-width="0" stroke="#FFCC66" fill="#ff7f00" onclick="showIMG('post_img')"/>
+  <g id="great hall">
+   <polygon points="498,231 546,231 546,197 592,197 592,231 640,231 640,270 592,270 592,395 498,395" stroke-width="0" stroke="#000000" fill="#7f007f" onclick="showIMG('greathall_img')" />
+  </g>
+  <path id="svg_33" d="m159,394.45001l9,-6.45001l-2,-14l2,-16l-7,-10l8,-14l-5,-16l3,-17l-6,-12l-9,12l0,14l-3,14l5,7l-2,18l-1,12l2,14l-6,10l12,4.45001z" stroke-width="0" stroke="#000000" fill="#3f7f00"/>
+  <path id="svg_34" d="m266.09998,238.75l0.90002,-27.75l-3,-24l3,-25l10,6l-4,17l-1,12l4,13l-5,13l3,9l3,13l-10.90002,-6.25z" stroke-width="0" stroke="#000000" fill="#3f7f00"/>
+  <path id="svg_35" d="m273.5,230.45001l-5.5,-9.45001l4,-8l1.5,17.45001z" stroke-width="0" stroke="#000000" fill="#3f7f00"/>
+  <path id="svg_36" d="m274.5,202.45001l-5.5,-22.45001l4,-13l5,20l-3.5,15.45001z" stroke-width="0" stroke="#000000" fill="#7f7f00"/>
+  <path opacity="0.8" id="svg_37" d="m272.5,183.45001l-1.5,24.54999l-2,16l7,5l4,-14l-5,-18l-2.5,-13.54999z" stroke-width="0" stroke="#000000" fill="#7f7f00"/>
+  <path id="svg_38" d="m167.5,357.45001l0.5,-12.45001l-3,-14l-10,13l12.5,13.45001z" opacity="0.5" stroke-width="0" stroke="#000000" fill="#3f7f00"/>
+  <path id="svg_39" d="m152.5,373.45001l-5.5,-17.45001l1,-18l7,-7l4,30l-6.5,12.45001z" opacity="0.5" stroke-width="0" stroke="#000000" fill="#7f7f00"/>
+  <path id="svg_40" d="m271.5,236.45001l-2.5,-16.45001l8,5l1,19l-13,1l6.5,-8.54999z" opacity="0.5" stroke-width="0" stroke="#000000" fill="#3f7f00"/>
+  <path id="svg_41" d="m112.5,386.45001l8.5,5.54999l9,-8l2,-16l-10,-9l-8,8l-1.5,19.45001z" opacity="0.9" stroke-width="0" stroke="#000000" fill="#3f7f00"/>
+  <path id="svg_42" d="m120.5,377.45001l-9.5,-8.45001l-1,-10l7,-3l10,4l-6.5,17.45001z" opacity="0.7" stroke-width="0" stroke="#000000" fill="#7f7f00"/>
+  <path id="svg_43" d="m130.5,364.45001l-11.5,8.54999l-3,10l8,6l10,-4l-3.5,-20.54999z" opacity="0.8" stroke-width="0" stroke="#000000" fill="#3f7f00"/>
+  <path id="svg_44" d="m163.5,302.45001l-8.5,13.54999l-5,15l-2,13l8,24l9,-19l-2,-24l2,-8l-1.5,-14.54999z" opacity="0.5" stroke-width="0" stroke="#000000" fill="#55962d"/>
+  <text font-weight="normal" transform="matrix(1.57428, 0, 0, 1.42608, -159.541, -189.178)" font-style="normal" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="11" id="svg_45" y="450.90732" x="294.56183" opacity="0.5" stroke-width="0" stroke="#000000" fill="#601717">Mile End Road</text>
+  <text transform="rotate(90, 304.623, 254.5)" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="13" id="svg_46" y="259" x="304" opacity="0.5" stroke-width="0" stroke="#000000" fill="#7f7f7f">Bancroft Road</text>
+  <g id="svg_49">
+   <text xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="13" id="svg_47" y="210" x="154" opacity="0.5" stroke-width="0" stroke="#000000" fill="#7f7f7f">Godward</text>
+   <text xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="13" id="svg_48" y="224" x="153" opacity="0.5" stroke-width="0" stroke="#000000" fill="#7f7f7f">Square</text>
+  </g>
+  <text xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="11" id="svg_50" y="408" x="137" opacity="0.5" stroke-width="0" stroke="#000000" fill="#601717">West Gate</text>
+ </g>
+ 
+
+
+ <p id="fogg_img"  style="visibility:hidden"> G. E. Fogg Building<br><br> <img src="fogg.jpg" /> <br> Queen Mary, University of London has been Highly Commended for its Fogg Building in the Chartered Institute of Buildings Services Engineers, (CIBSE) Building Performance Awards 2012. Judged by a panel of distinguished industry leaders the CIBSE Building Performance Awards recognise, reward and celebrate the best performance, innovation and practice in design, commissioning, construction, installation and operation of sustainable buildings and the manufacturers whose technologies enable energy efficiency. The awards focus on actual, measured performance, not design intent or performance specifications.
+</p>
+<p id="itl_img"  style="visibility:hidden"> The Informatics Teaching Laboratory <br><br> <img src="itl.jpg" />
+<br>The ITL is a purpose-built building designed by the architectural firm MacCormac Jamieson Prichard, who also designed our student village. The Laboratory was made possible by a generous gift from the Wolfson Foundation and substantial funding from the UFC (now HEFCE).</p>
+<p id="math_img" style="visibility:hidden"> Mathematics Building<br><br>
+<img src="math.jpg"><br>The School of Mathematical Sciences occupies a building at the western end of the Queen Mary campus known as the 'Mathematics Building', reflecting its construction in 1967 for the then Department of Mathematics. The School office is located in room 101 on the first floor.</p>
+<p id="infusion_img" style="visibility:hidden"> Infusion <br><br>
+<img src="infusion.jpg"><br>Infusion has recently been refurbished, over the Easter holiday, to a brilliantly high standard.  I now features a new simpler layout and bigger range of products, as well as an expanded seating area.  Infusion is a brilliant place to pop to for a coffee, snack or a spot of lunch. Two coffee machines make it an easy and cheap place for a quick coffee, and with frequent deals you'll be sure to find a bargain.</p>
+<p id="cs_img" style="visibility:hidden"> Computer Science <br><br>
+<img src="cs.jpg"><br> "We are passionate about computing and its impact on the world, and committed to developing a supportive, friendly and challenging environment for teaching, learning and research."</p>
+<p id="drapers_img" style="visibility:hidden"> Drapers Bar and Kitchen <br><br>
+<img src="drapers.jpg"><br>Drapers Bar & Kitchen has recently been renovated to provide a relaxed and easy-going environment for students and staff to take a break from work and socialise with friends.  We've improved our menu and offer good quality food and options for those with special dietary requirements.</p>
+<p id="qmotion_img" style="visibility:hidden"> QMotion <br><br>
+<img src="qmotion.jpg"><br>Qmotion is an industry leading gym that is proud to be different. As well as a large open plan gym, exciting studio timetable and a wide range of additional services – we pride ourselves on delivering great customer service to all our members.</p>
+<p id="greathall_img" style="visibility:hidden"> The Great Hall/The People's Palace <br><br>
+<img src="greathall.jpg"><br>When the original Great Hall opened in 1887, one and a half million people visited the building in just one year, flocking to the east London venue for entertainment, education and recreation. Following a &#163;6m refurbishment project to restore the building and install new technology, Queen Mary, University of London will relaunch the People&#39;s Palace in February 2013 as a venue for both students and the community.</p>
+<p id="bancroft_img" style="visibility:hidden"> Bancroft Road Teaching Rooms <br><br>
+<img src="bancroft.jpg"></p>
+<p id="irc_img" style="visibility:hidden"> IRC Building <br><br>
+<img src="irc.jpg"><br>
+Student Capacity - 20<br>
+General Equipment - 11 Tables, 26 Chairs<br>
+Audio Visual Equipment - Data Projector, Overhead Projector,
+Screen, 3 Whiteboards</p>
+<p id="post_img" style="visibility:hidden"> Post Room <br><br>
+<img src="post.jpg"><br>The Mail Room at the Mile End Campus is located at the rear of the People's Palace and can advise you on any postal issues and problems. Departments are able to collect their post from the Mail Room on a daily basis, or can have it delivered for a small charge.</p>
+<p id="orchestra_img" style="visibility:hidden"> London Chamber Orchestra <br><br>
+<img src="orchestra.jpg"><br>LCO was founded in 1921 and has a world class reputation for bringing classical and chamber music to audiences around the world.</p>
+<p id="engineering_img" style="visibility:hidden"> Engineering Building <br><br>
+<img src="engineering.jpg"><br>The School of Engineering and Materials Science (SEMS) provides outstanding degree programmes coupled with internationally leading research.</p>
+<p id="temporary_img" style="visibility:hidden"> Temporary Building <br><br>
+<img src="temporary.jpg"> <br>
+The temporary building on the site of the demolished old chemistry building (behind the Queens' Building) is now part of a newly landscaped area that looks pleasant and welcoming. The student facilities that were temporarily located in this building have now been moved back to the Hive, so this building is no longer accessible to students.</p>
+
+</svg>
+</div>
+
+<div id="footer" class="s">
+    Source for the text: http://www.qmul.ac.uk/
+</div>
+
+<script type='text/javascript'>
+
+var imgs = new Array();
+imgs[0] = "fogg_img";
+imgs[1] = "itl_img";
+imgs[2] = "math_img";
+imgs[3] = "infusion_img";
+imgs[4] = "cs_img";
+imgs[5] = "drapers_img";
+imgs[6] = "qmotion_img";
+imgs[7] = "greathall_img";
+imgs[8] = "bancroft_img";
+imgs[9] = "irc_img";
+imgs[10] = "post_img";
+imgs[11] = "orchestra_img";
+imgs[12] = "engineering_img";
+imgs[13] = "temporary_img";
+
+function showIMG(idStr){
+  for (var i = 0; i < imgs.length; i++) {
+    document.getElementById(imgs[i]).style.visibility='hidden';  
+  }
+  document.getElementById(idStr).style.visibility='visible';
+}
+
+
+function unselectedColour(evt) {
+    var target = evt.target;
+    target.setAttributeNS(null, 'fill', '#7f007f');
+}
+
+function unselectedColourOrange(evt) {
+    var target = evt.target;
+    target.setAttributeNS(null, 'fill', '#ff7f00');
+}
+
+function selectedColour(evt) {
+    var target = evt.target;
+    target.setAttributeNS(null, 'fill', '#CC99FF');
+
+
+}
+
+ function selectedColourOrange(evt) {
+    var target = evt.target;
+    target.setAttributeNS(null, 'fill', '#FFCC66');
+    target.setAttributeNS(null, 'style.top', 'length 10');
+}
+
+var myRect = document.getElementById('itl');
+myRect.addEventListener('mouseover', selectedColour, false);
+myRect.addEventListener('mouseout', unselectedColour, false);
+
+var myRect = document.getElementById('mathematics');
+myRect.addEventListener('mouseover', selectedColour, false);
+myRect.addEventListener('mouseout', unselectedColour, false);
+
+var myRect = document.getElementById('cs');
+myRect.addEventListener('mouseover', selectedColour, false);
+myRect.addEventListener('mouseout', unselectedColour, false);
+
+var myRect = document.getElementById('engineering');
+myRect.addEventListener('mouseover', selectedColour, false);
+myRect.addEventListener('mouseout', unselectedColour, false);
+
+var myRect = document.getElementById('fogg');
+myRect.addEventListener('mouseover', selectedColour, false);
+myRect.addEventListener('mouseout', unselectedColour, false);
+
+var myRect = document.getElementById('temporary');
+myRect.addEventListener('mouseover', selectedColour, false);
+myRect.addEventListener('mouseout', unselectedColour, false);
+
+var myRect = document.getElementById('great hall');
+myRect.addEventListener('mouseover', selectedColour, false);
+myRect.addEventListener('mouseout', unselectedColour, false);
+
+var myRect = document.getElementById('irc');
+myRect.addEventListener('mouseover', selectedColour, false);
+myRect.addEventListener('mouseout', unselectedColour, false);
+
+var myRect = document.getElementById('drapers');
+myRect.addEventListener('mouseover', selectedColourOrange, false);
+myRect.addEventListener('mouseout', unselectedColourOrange, false);
+
+var myRect = document.getElementById('qmotion');
+myRect.addEventListener('mouseover', selectedColourOrange, false);
+myRect.addEventListener('mouseout', unselectedColourOrange, false);
+
+var myRect = document.getElementById('bancroft rooms');
+myRect.addEventListener('mouseover', selectedColourOrange, false);
+myRect.addEventListener('mouseout', unselectedColourOrange, false);
+
+var myRect = document.getElementById('infusion');
+myRect.addEventListener('mouseover', selectedColourOrange, false);
+myRect.addEventListener('mouseout', unselectedColourOrange, false);
+
+var myRect = document.getElementById('post');
+myRect.addEventListener('mouseover', selectedColourOrange, false);
+myRect.addEventListener('mouseout', unselectedColourOrange, false);
+
+var myRect = document.getElementById('chamber orchestra');
+myRect.addEventListener('mouseover', selectedColourOrange, false);
+myRect.addEventListener('mouseout', unselectedColourOrange, false);
+
+</script>
+
+</body>
+</html> 
+
